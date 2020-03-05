@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AC767F10DDDAD2CB9F0843A /* Pods_Sample_Cocktails_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D126F1B9B55E5A55DB845C4 /* Pods_Sample_Cocktails_App.framework */; };
+		2BA3277023F08F2B00CC79B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3276F23F08F2B00CC79B1 /* AppDelegate.swift */; };
+		2BA3277223F08F2B00CC79B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3277123F08F2B00CC79B1 /* SceneDelegate.swift */; };
+		2BA3277423F08F2B00CC79B1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3277323F08F2B00CC79B1 /* HomeViewController.swift */; };
+		2BA3277723F08F2B00CC79B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA3277523F08F2B00CC79B1 /* Main.storyboard */; };
+		2BA3277923F08F2E00CC79B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA3277823F08F2E00CC79B1 /* Assets.xcassets */; };
+		2BA3277C23F08F2E00CC79B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA3277A23F08F2E00CC79B1 /* LaunchScreen.storyboard */; };
+		2BA3278823F0950F00CC79B1 /* CocktailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BA3278723F0950F00CC79B1 /* CocktailCell.xib */; };
+		2BA3278A23F0952C00CC79B1 /* IngredientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BA3278923F0952C00CC79B1 /* IngredientCell.xib */; };
+		2BA3278C23F095FC00CC79B1 /* CocktailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3278B23F095FC00CC79B1 /* CocktailCell.swift */; };
+		2BA3278E23F0963E00CC79B1 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3278D23F0963E00CC79B1 /* IngredientCell.swift */; };
+		2BA3279023F097E900CC79B1 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3278F23F097E900CC79B1 /* IngredientsViewController.swift */; };
+		2BA3279223F0980E00CC79B1 /* CocktailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3279123F0980E00CC79B1 /* CocktailsViewController.swift */; };
+		2BA3279523F09B5F00CC79B1 /* UIViewController+ContainerOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3279423F09B5F00CC79B1 /* UIViewController+ContainerOperations.swift */; };
+		2BA3279723F09D1E00CC79B1 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3279623F09D1E00CC79B1 /* HomeModel.swift */; };
+		2BA3279B23F09DB200CC79B1 /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3279A23F09DB200CC79B1 /* Cocktail.swift */; };
+		2BA3279D23F09FB100CC79B1 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3279C23F09FB100CC79B1 /* APIManager.swift */; };
+		2BA3279F23F0AA3B00CC79B1 /* UIImageView+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3279E23F0AA3B00CC79B1 /* UIImageView+Operations.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2BA3276C23F08F2B00CC79B1 /* Sample Cocktails App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample Cocktails App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA3276F23F08F2B00CC79B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2BA3277123F08F2B00CC79B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2BA3277323F08F2B00CC79B1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2BA3277623F08F2B00CC79B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BA3277823F08F2E00CC79B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BA3277B23F08F2E00CC79B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BA3277D23F08F2E00CC79B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA3278723F0950F00CC79B1 /* CocktailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailCell.xib; sourceTree = "<group>"; };
+		2BA3278923F0952C00CC79B1 /* IngredientCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientCell.xib; sourceTree = "<group>"; };
+		2BA3278B23F095FC00CC79B1 /* CocktailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailCell.swift; sourceTree = "<group>"; };
+		2BA3278D23F0963E00CC79B1 /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
+		2BA3278F23F097E900CC79B1 /* IngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
+		2BA3279123F0980E00CC79B1 /* CocktailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsViewController.swift; sourceTree = "<group>"; };
+		2BA3279423F09B5F00CC79B1 /* UIViewController+ContainerOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ContainerOperations.swift"; sourceTree = "<group>"; };
+		2BA3279623F09D1E00CC79B1 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		2BA3279A23F09DB200CC79B1 /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
+		2BA3279C23F09FB100CC79B1 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		2BA3279E23F0AA3B00CC79B1 /* UIImageView+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Operations.swift"; sourceTree = "<group>"; };
+		2D126F1B9B55E5A55DB845C4 /* Pods_Sample_Cocktails_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_Cocktails_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7865EC3F46A636BB55CAD8 /* Pods-Sample Cocktails App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample Cocktails App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample Cocktails App/Pods-Sample Cocktails App.release.xcconfig"; sourceTree = "<group>"; };
+		BC0AF163F727125DB7363287 /* Pods-Sample Cocktails App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample Cocktails App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample Cocktails App/Pods-Sample Cocktails App.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BA3276923F08F2B00CC79B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC767F10DDDAD2CB9F0843A /* Pods_Sample_Cocktails_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BA3276323F08F2B00CC79B1 = {
+			isa = PBXGroup;
+			children = (
+				2BA3276E23F08F2B00CC79B1 /* Sample Cocktails App */,
+				2BA3276D23F08F2B00CC79B1 /* Products */,
+				8C62875375E30DC6376B0D3C /* Pods */,
+				F3D979A555D4DF7A00FB8F6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2BA3276D23F08F2B00CC79B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BA3276C23F08F2B00CC79B1 /* Sample Cocktails App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BA3276E23F08F2B00CC79B1 /* Sample Cocktails App */ = {
+			isa = PBXGroup;
+			children = (
+				2BA3279323F09AFF00CC79B1 /* Extensions */,
+				2BA3278523F0949000CC79B1 /* Model */,
+				2BA3278423F0948A00CC79B1 /* ViewModel */,
+				2BA3278323F0948500CC79B1 /* View */,
+				2BA3276F23F08F2B00CC79B1 /* AppDelegate.swift */,
+				2BA3277123F08F2B00CC79B1 /* SceneDelegate.swift */,
+				2BA3279C23F09FB100CC79B1 /* APIManager.swift */,
+				2BA3277823F08F2E00CC79B1 /* Assets.xcassets */,
+				2BA3277A23F08F2E00CC79B1 /* LaunchScreen.storyboard */,
+				2BA3277D23F08F2E00CC79B1 /* Info.plist */,
+			);
+			path = "Sample Cocktails App";
+			sourceTree = "<group>";
+		};
+		2BA3278323F0948500CC79B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BA3278623F094D000CC79B1 /* Cells */,
+				2BA3277323F08F2B00CC79B1 /* HomeViewController.swift */,
+				2BA3277523F08F2B00CC79B1 /* Main.storyboard */,
+				2BA3278F23F097E900CC79B1 /* IngredientsViewController.swift */,
+				2BA3279123F0980E00CC79B1 /* CocktailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BA3278423F0948A00CC79B1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2BA3279623F09D1E00CC79B1 /* HomeModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2BA3278523F0949000CC79B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BA3279A23F09DB200CC79B1 /* Cocktail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BA3278623F094D000CC79B1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2BA3278723F0950F00CC79B1 /* CocktailCell.xib */,
+				2BA3278B23F095FC00CC79B1 /* CocktailCell.swift */,
+				2BA3278923F0952C00CC79B1 /* IngredientCell.xib */,
+				2BA3278D23F0963E00CC79B1 /* IngredientCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2BA3279323F09AFF00CC79B1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2BA3279423F09B5F00CC79B1 /* UIViewController+ContainerOperations.swift */,
+				2BA3279E23F0AA3B00CC79B1 /* UIImageView+Operations.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8C62875375E30DC6376B0D3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC0AF163F727125DB7363287 /* Pods-Sample Cocktails App.debug.xcconfig */,
+				4A7865EC3F46A636BB55CAD8 /* Pods-Sample Cocktails App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3D979A555D4DF7A00FB8F6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D126F1B9B55E5A55DB845C4 /* Pods_Sample_Cocktails_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BA3276B23F08F2B00CC79B1 /* Sample Cocktails App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BA3278023F08F2E00CC79B1 /* Build configuration list for PBXNativeTarget "Sample Cocktails App" */;
+			buildPhases = (
+				5AA0EE48C2D9D709190B9C7E /* [CP] Check Pods Manifest.lock */,
+				2BA3276823F08F2B00CC79B1 /* Sources */,
+				2BA3276923F08F2B00CC79B1 /* Frameworks */,
+				2BA3276A23F08F2B00CC79B1 /* Resources */,
+				AA0352DF2717045C61F3CFA4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sample Cocktails App";
+			productName = "Sample Cocktails App";
+			productReference = 2BA3276C23F08F2B00CC79B1 /* Sample Cocktails App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BA3276423F08F2B00CC79B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Dalia Danila";
+				TargetAttributes = {
+					2BA3276B23F08F2B00CC79B1 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2BA3276723F08F2B00CC79B1 /* Build configuration list for PBXProject "Sample Cocktails App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BA3276323F08F2B00CC79B1;
+			productRefGroup = 2BA3276D23F08F2B00CC79B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BA3276B23F08F2B00CC79B1 /* Sample Cocktails App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BA3276A23F08F2B00CC79B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA3277C23F08F2E00CC79B1 /* LaunchScreen.storyboard in Resources */,
+				2BA3278A23F0952C00CC79B1 /* IngredientCell.xib in Resources */,
+				2BA3277923F08F2E00CC79B1 /* Assets.xcassets in Resources */,
+				2BA3277723F08F2B00CC79B1 /* Main.storyboard in Resources */,
+				2BA3278823F0950F00CC79B1 /* CocktailCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AA0EE48C2D9D709190B9C7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sample Cocktails App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA0352DF2717045C61F3CFA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sample Cocktails App/Pods-Sample Cocktails App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sample Cocktails App/Pods-Sample Cocktails App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BA3276823F08F2B00CC79B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA3279D23F09FB100CC79B1 /* APIManager.swift in Sources */,
+				2BA3279B23F09DB200CC79B1 /* Cocktail.swift in Sources */,
+				2BA3277423F08F2B00CC79B1 /* HomeViewController.swift in Sources */,
+				2BA3279223F0980E00CC79B1 /* CocktailsViewController.swift in Sources */,
+				2BA3279723F09D1E00CC79B1 /* HomeModel.swift in Sources */,
+				2BA3279023F097E900CC79B1 /* IngredientsViewController.swift in Sources */,
+				2BA3278E23F0963E00CC79B1 /* IngredientCell.swift in Sources */,
+				2BA3279523F09B5F00CC79B1 /* UIViewController+ContainerOperations.swift in Sources */,
+				2BA3277023F08F2B00CC79B1 /* AppDelegate.swift in Sources */,
+				2BA3277223F08F2B00CC79B1 /* SceneDelegate.swift in Sources */,
+				2BA3278C23F095FC00CC79B1 /* CocktailCell.swift in Sources */,
+				2BA3279F23F0AA3B00CC79B1 /* UIImageView+Operations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2BA3277523F08F2B00CC79B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BA3277623F08F2B00CC79B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BA3277A23F08F2E00CC79B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BA3277B23F08F2E00CC79B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BA3277E23F08F2E00CC79B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BA3277F23F08F2E00CC79B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BA3278123F08F2E00CC79B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0AF163F727125DB7363287 /* Pods-Sample Cocktails App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 739Y89842X;
+				INFOPLIST_FILE = "Sample Cocktails App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artemissimplesolutions.Sample-Cocktails-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BA3278223F08F2E00CC79B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A7865EC3F46A636BB55CAD8 /* Pods-Sample Cocktails App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 739Y89842X;
+				INFOPLIST_FILE = "Sample Cocktails App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artemissimplesolutions.Sample-Cocktails-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BA3276723F08F2B00CC79B1 /* Build configuration list for PBXProject "Sample Cocktails App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA3277E23F08F2E00CC79B1 /* Debug */,
+				2BA3277F23F08F2E00CC79B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BA3278023F08F2E00CC79B1 /* Build configuration list for PBXNativeTarget "Sample Cocktails App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA3278123F08F2E00CC79B1 /* Debug */,
+				2BA3278223F08F2E00CC79B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BA3276423F08F2B00CC79B1 /* Project object */;
+}
