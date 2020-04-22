@@ -15,12 +15,6 @@ class CocktailCell: UICollectionViewCell {
     @IBOutlet weak var cocktailImage: UIImageView!
     @IBOutlet weak var cocktailTitle: UILabel!
     
-//    var withBackView : Bool! {
-//        didSet {
-//            self.backViewGenrator()
-//        }
-//    }
-    
     private lazy var backView: UIImageView = {
         let backView = UIImageView(frame: cocktailImage.frame)
         backView.translatesAutoresizingMaskIntoConstraints = false
@@ -36,11 +30,4 @@ class CocktailCell: UICollectionViewCell {
             self.cocktailTitle.text = cellCocktail.drinkTitle
         }
     }
-//    private func backViewGenrator(){
-//        backView.loadImage(fromURL: album.albumArtWork)
-//    }
-//    override func prepareForReuse() {
-//        albumImage.image = UIImage()
-//        backView.image = UIImage()
-//    }
 }
